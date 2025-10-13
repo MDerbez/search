@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link href="/static/styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light px-4">
+
+            <div class="ms-auto">
+                <button class="btn btn-outline-primary me-2" onclick="window.location.href='index.html'">Search</button>
+            </div>
+        </nav>
+        <main>
+        <div class="d-flex flex-column justify-content-center align-items-center vh-100 text-center">
+        <p class="display-4 fw-bold">Google</p>
+        <p>                   Imágenes</p>
+            <form action="https://www.google.com/search" method="get">
+                <input type="hidden" name="tbm" value="isch">
+                <input type="text" name="q" class="form-control rounded-pill mb-3" style="width:300px;"> <br>
+                <input type="submit" value="Buscar con Google" class="btn btn-light border" style="border-radius:4px;">
+            </form>
+        </div>
+
+        <script>
+            function abrepagina(iweb)
+            {
+                switch(iweb)
+                {
+                    case "1":
+                        window.location.href = "index.html";
+                        break;
+               }
+            }
+        </script>
+        </main>
+
+    </body>
+
